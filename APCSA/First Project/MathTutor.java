@@ -2,10 +2,11 @@ import java.util.Scanner;
 public class MathTutor{
     
         public static double getUserString;
+       public static boolean Stop;
     public static void main(String[]args){
-        boolean StopProgram=false;
+        Stop = false;
         double UserInt;
-        while(StopProgram=false){
+        while(Stop=false){
         AreaOfCircle Area = new AreaOfCircle();
         PythagreanTheorum Pythagrean = new PythagreanTheorum();
         SlopeBetweenTwoPoints slope = new SlopeBetweenTwoPoints();
@@ -28,10 +29,10 @@ System.out.println("You have inputed a value that is out of bounds.");
         System.out.println("Would you like to restart the program? Type 1 to restart and type 2 to end.");
         getUserString=scan.nextDouble();
         if(getUserString == 1){
-            StopProgram=false;
+            Stop=false;
         }
         else{
-            StopProgram=true;
+            Stop=true;
         }
         scan.close();
     }
